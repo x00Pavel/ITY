@@ -1,0 +1,74 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage[unicode]{hyperref}
+\usepackage{times}
+\usepackage[left=2cm,top=3cm,text={17cm,24cm}]{geometry}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \textsc{\Huge Fakulta informačních technologii\\\vspace{0.4em}
+        vysoké učení technické v Brně}\\
+        \vspace{\stretch{0.382}}
+        {\LARGE Typografie a publikování -- 4. projekt\\\vspace{0.3em}
+        Bibliografické citace (BiBTeX, ČSN ISO 690)}
+        \vspace{\stretch{0.618}}
+    \end{center}
+    \begin{flushleft}
+        \today
+        \hfill
+        Pavel Yadlouski (xyadlo00)
+    \end{flushleft}
+\end{titlepage}
+
+\newpage
+\section*{Úvod}
+	Dneska každý ví, co to je \uv{Microsoft Office} \footnote{Nějakou informaci můžete najít zde \cite{Microsoft2010}}. Podle analýzy 	Microsoft Office je nejpoužívanější software pro práci z textem. Ale asi většina z uživatelů Microsoft Office nikdy nevěděla, že existuje \LaTeX. V tom to projektu já bych chtěl vysvětlit co to vůbec je - \LaTeX, a jak on funguje
+
+\section{Definice}
+\LaTeX - je komplexní sada příkazů, využívající propracovaný sázecí program \TeX, pro přípravu široké
+škály dokumentů, od vědeckých článků, zpráv, prezentací, až po celé knihy. \TeX\ i~samotný \LaTeX\ je
+otevřený software. Jak otevřeni software, uživatel může opravovat \LaTeX podle svých potřeby a~svobodně šiřit, ale pod jiným jménem, aby nedošlo k~záměně. Pro pochopení rozdílu mezi \TeX a~\LaTeX můžete se podívat na \cite{Kopkac}.
+
+
+
+\section{Práce s~{\LaTeX}em}
+Pracující v \LaTeX vypadá jako programátor, protože jeho práce je skoro programování, ale ne programu, ale textového dokumentu. \uv{Programování} v \LaTeX sestává ze třech kroku, jak je uvedeno v~\cite{Rybicka}:
+		\begin{enumerate}
+			\item psaní (úprava) zdrojového textu,
+			\item překlad\,--\,vysazení,
+			\item prohlížení		
+		\end{enumerate}
+
+\section{Motivace}
+Možná, už ve vaše hlavě zní otázka: proč by měl se učit nějaký skoro progromátorský jazyk, aby prostě sázet dokumenty? Odpověď je jednoduchá. Protože {\LaTeX} poskytuje spoustu balíků, který otevírají obrovské množství možností pro vytvořeni textů. 
+
+V~článku \cite{Simecek} je uvedeno, vlastnosti {\LaTeX}u můžeme shrnout do několika slov: jednoduchost, elegance a~možnost být kreativní.
+
+\section{Struktura dokumentu}
+První, co má uživatel uvědomit při práci z~{\LaTeX}, je to, jak vypadá samostatný \uv{program} v~editoru. Kód se skládá ze dvou častí --  preambule a~vlastaního textu. Preambule obsahuje globální nastavení dokumentu (viz  \cite{Svamberg}).
+
+\section{Prostředí pro práce}
+Samozřejmě existuje spousta aplikaci pro práci v {\LaTeX}, který můžete naistalovat na svůj počítač, ale chtěl bych soustředit na online editory. Popis nějakých webových aplikací a~další informací můžete najít zde \cite{Sokol} 
+
+\section{Co v \LaTeX je nejlepší}
+Jeden z nejvýznamnějších atributů {\LaTeX} je sazba matematického textu. Výsledná kvalita matematických vzorců, tabulek, jakýchkoliv matematických symbolů je výrazně lepší v {\LaTeX}u, než v jiných textových editorech. Pro snadnou práci z~matematickým textem existuje specialně matematické prostředí. Takové prostředí začíná a~končí například pomocí \$..\$ nebo \$\$..\$\$. V~tomto módu lze velmi jednoduše sázet zlomky, matematické symboly a~znaky, závorky a~další speciálity viz \cite{Olsak}. Například matematický výraz může vypadat nejak takto :
+
+\begin{eqnarray}
+    \int_{b}^{a} x(x) dx & = & -\int\limits_{a}^{b} f(x) dx\\
+     \overline{\overline{A \wedge B}} & \Leftrightarrow & \overline{\overline{A} \vee \overline{B}}
+\end{eqnarray}
+
+Příklad vysázené rovnice (lze nalézt v~\cite{CazarezCastro})
+		
+ 
+
+
+\newpage
+	\bibliographystyle{czechiso}
+	\renewcommand{\refname}{Literatura}
+	\bibliography{proj4}
+\end{document}
